@@ -36,14 +36,10 @@ def Start_Carte():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind(("127.0.0.1", 0))
 
-    try:
-        handler = partial(SilentHTTPRequestHandler, directory=str(BASE))
-        serveur = ThreadingHTTPServer(("127.0.0.1", PORT), handler)
-        thread = threading.Thread(target=serveur.serve_forever, daemon=True)
-        thread.start()
-    except OSError:
-        print(f"Impossible de lancer le serveur HTTP sur le port {PORT}.")
-        return None, None
+    handler = partial(SilentHTTPRequestHandler, directory=str(BASE))
+    serveur = ThreadingHTTPServer(("127.0.0.1", PORT), handler)
+    thread = threading.Thread(target=serveur.serve_forever, daemon=True)
+    thread.start()
 
     url = f"http://127.0.0.1:{PORT}/{CARTE}"
     #webbrowser.open(url)
@@ -90,11 +86,7 @@ if __name__ == "__main__":
             print("Valeur invalide\n")
             continue
 
-        try:
-            categorie, cluster, algo = predire(haut_tot, tronc_diam, k)
-        except Exception as e:
-            print(f"Erreur de prediction: {e}")
-            continue
+        categorie, cluster, algo = predire(haut_tot, tronc_diam, k)
 
         print(f"\n  Catégorie : {categorie}")
         # print(f"  Cluster   : n°{cluster}")
