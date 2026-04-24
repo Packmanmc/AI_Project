@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x1f4ca; Tableau des commandes de test et r&eacute;sultats</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h2 id="-tableau-des-commandes-de-test-et-résultats">📊 Tableau des commandes de test et résultats</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">#</th>
+<th style="text-align:left">Test</th>
+<th style="text-align:left">Commande</th>
+<th style="text-align:center">Score attendu</th>
+<th style="text-align:center">Priorité attendue</th>
+<th style="text-align:center">Score obtenu</th>
+<th style="text-align:center">Priorité obtenue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left">Arbre grand, fin, isolé, conifère, âgé (risque maximal)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 25 -D 45 -s Isolé -f Conifère -a 60</code></td>
+<td style="text-align:center"><strong>5/5</strong></td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+<td style="text-align:center">5/5</td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left">Arbre grand, fin, isolé, conifère (âge non renseigné)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 25 -D 45 -s Isolé -f Conifère</code></td>
+<td style="text-align:center"><strong>4/5</strong></td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+<td style="text-align:center">4/5</td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left">Arbre grand, fin, isolé (feuillu, âge non renseigné)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 25 -D 45 -s Isolé -f Feuillu</code></td>
+<td style="text-align:center"><strong>3/5</strong></td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+<td style="text-align:center">3/5</td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left">Arbre grand, fin (en groupe, feuillu, jeune)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 25 -D 45 -s Groupe -f Feuillu -a 20</code></td>
+<td style="text-align:center"><strong>2/5</strong></td>
+<td style="text-align:center">🟠 PRIORITÉ 2</td>
+<td style="text-align:center">2/5</td>
+<td style="text-align:center">PRIORITÉ 2</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left">Arbre grand (diamètre normal, en groupe, feuillu, jeune)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 25 -D 100 -s Groupe -f Feuillu -a 20</code></td>
+<td style="text-align:center"><strong>1/5</strong></td>
+<td style="text-align:center">🟡 PRIORITÉ 3</td>
+<td style="text-align:center">1/5</td>
+<td style="text-align:center">🟡 PRIORITÉ 3</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left">Arbre moyen (toutes caractéristiques neutres)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 12 -D 80 -s Alignement -f Feuillu -a 30</code></td>
+<td style="text-align:center"><strong>0/5</strong></td>
+<td style="text-align:center">🟢 PRIORITÉ 4</td>
+<td style="text-align:center">0/5</td>
+<td style="text-align:center">🟢 PRIORITÉ 4</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left">Arbre petit, gros, en groupe, feuillu, jeune (risque minimal)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 6 -D 180 -s Groupe -f Feuillu -a 20</code></td>
+<td style="text-align:center"><strong>0/5</strong></td>
+<td style="text-align:center">🟢 PRIORITÉ 4</td>
+<td style="text-align:center">0/5</td>
+<td style="text-align:center">🟢 PRIORITÉ 4</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left">Arbre isolé, conifère, âgé (mais taille petite)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 8 -D 55 -s Isolé -f Conifère -a 50</code></td>
+<td style="text-align:center"><strong>3/5</strong></td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+<td style="text-align:center">4/5</td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:left">Arbre alignement, conifère, âgé (taille moyenne)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 15 -D 120 -s Alignement -f Conifère -a 50</code></td>
+<td style="text-align:center"><strong>2/5</strong></td>
+<td style="text-align:center">🟠 PRIORITÉ 2</td>
+<td style="text-align:center">3/5</td>
+<td style="text-align:center">🔴 PRIORITÉ 1</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:left">Format JSON (pour intégration)</td>
+<td style="text-align:left"><code>C:\Users\mihin\.local\bin\python3.14.exe c:/Users/mihin/Documents/projetbddbigdata/IA/client3.py -H 25 -D 45 -s Isolé -f Conifère -a 60 --json</code></td>
+<td style="text-align:center"><strong>5/5</strong></td>
+<td style="text-align:center">🔴 PRIORITÉ 1 (format JSON)</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">PRIORITÉ 1 🔴</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="-légende">📝 Légende</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Icône</th>
+<th style="text-align:left">Priorité</th>
+<th style="text-align:center">Score</th>
+<th style="text-align:left">Action recommandée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">🔴</td>
+<td style="text-align:left">PRIORITÉ 1</td>
+<td style="text-align:center">3-5</td>
+<td style="text-align:left">Inspection urgente recommandée</td>
+</tr>
+<tr>
+<td style="text-align:center">🟠</td>
+<td style="text-align:left">PRIORITÉ 2</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">À inspecter avant la prochaine tempête</td>
+</tr>
+<tr>
+<td style="text-align:center">🟡</td>
+<td style="text-align:left">PRIORITÉ 3</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">Surveillance régulière suffisante</td>
+</tr>
+<tr>
+<td style="text-align:center">🟢</td>
+<td style="text-align:left">PRIORITÉ 4</td>
+<td style="text-align:center">0</td>
+<td style="text-align:left">Inspection de routine uniquement</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+            
+            
+        </body>
+        </html>
